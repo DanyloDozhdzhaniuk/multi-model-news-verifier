@@ -26,6 +26,13 @@ A web app for **verifying news articles** using multiple AI models and an **inte
 
 ---
 
+## App files
+
+- [app.py](./app.py) – Flask server
+- [index.html](./templates/index.html) – Frontend
+- [news_style.css](./static/news_style.css) – Styles
+- [news_script.js](./static/news_script.js) – JS
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
