@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='news_style.css') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Verification AI</title>
+  
+</head>
+<body>
+
+
+
+  
+  
+  <div class="center-container">
+
+   <div class="bar-container">
+    <div class="bar"></div>
+   </div>
+
+  
+    <textarea id="input-field" placeholder="Your News Here"></textarea>
+    
+   <button id="main-button" onclick="sendNews()">Verify</button>
+  
+  </div>
+
+
+
+  <script src="{{ url_for('static', filename='news_script.js') }}"></script>
+</body>
+</html>
