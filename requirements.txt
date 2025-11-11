@@ -4,5 +4,6 @@ flask-limiter
 torch
 transformers
 sentence-transformers
-nltk
 worldnewsapi
+nltk
+python-dotenv   # optional (for securing an API key)
