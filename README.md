@@ -10,11 +10,11 @@ A web app for **verifying news articles** using multiple AI models and an **inte
 
 ## Features
 
-- **Semantic similarity check** – Measures similarity between user input and verified news using Sentence Transformers and [World News API](https://worldnewsapi.com/)
-- **BERT-based reliability prediction** – Fine-tuned model to evaluate the trustworthiness of news text
-- **Natural Language Inference (NLI)** – Detects contradictions, neutral statements, or entailments between user input and reference news
-- **Summarization** – Summarizes long texts for faster analysis and compatability with other AI models and tools
-- **Responsive web interface** – Interactive and User Friendly UI with live reliability score feedback
+- **Semantic similarity check** - Measures similarity between user input and verified news using Sentence Transformers and [World News API](https://worldnewsapi.com/)
+- **BERT-based reliability prediction** - Fine-tuned model to evaluate the trustworthiness of news text
+- **Natural Language Inference (NLI)** - Detects contradictions, neutral statements, or entailments between user input and reference news
+- **Summarization** - Summarizes long texts for faster analysis and compatability with other AI models and tools
+- **Responsive web interface** - Interactive and User Friendly UI with live reliability score feedback
 
 ---
 
@@ -28,10 +28,10 @@ A web app for **verifying news articles** using multiple AI models and an **inte
 
 ## App files
 
-- [app.py](./app.py) – Flask server
-- [index.html](./templates/index.html) – Frontend
-- [news_style.css](./static/news_style.css) – Styles
-- [news_script.js](./static/news_script.js) – JS
+- [app.py](./app.py) - Flask server
+- [index.html](./templates/index.html) - Frontend
+- [news_style.css](./static/news_style.css) - Styles
+- [news_script.js](./static/news_script.js) - JS
 
 ## License
 
