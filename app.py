@@ -220,8 +220,8 @@ def predict_news():
             
         except IndexError:
             reliability_score = get_bert_prediction(news)
-            if reliability_score - 15>=0:
-                reliability_score = reliability_score - 15
+            if reliability_score >= 15:
+                reliability_score -= 15
         
    
         return jsonify({"prediction": reliability_score})
