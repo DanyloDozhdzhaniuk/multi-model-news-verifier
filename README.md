@@ -1,38 +1,7 @@
-# News Verification AI
+<h1>News Verification System <img src="static/favicons/favicon-96x96.png" width="45" height="45" valign="middle"></h1>
 
-A web app for **verifying news articles** using multiple AI models and an **internet-based fact-checking system**. This tool helps assess the reliability of news by comparing it with real world sources and analyzing semantic consistency.
-
----
-
-### Link to the fine-tuned BERT model (you can read about it more there too): https://huggingface.co/v0lt/News_Reliability_BERT_fine_tuned
-
----
-
-## Features
-
-- **Semantic similarity check** - Measures similarity between user input and verified news using Sentence Transformers and [World News API](https://worldnewsapi.com/)
-- **BERT-based reliability prediction** - Fine-tuned model to evaluate the trustworthiness of news text
-- **Natural Language Inference (NLI)** - Detects contradictions, neutral statements, or entailments between user input and reference news
-- **Summarization** - Summarizes long texts for faster analysis and compatability with other AI models and tools
-- **Responsive web interface** - Interactive and User Friendly UI with live reliability score feedback
-
----
-
-## Demo
+A web app for **verifying news articles or claims** through an **internet-based retrieval system** and a pipeline of **multiple non-generative AI models**, avoiding the hallucinations caused by generative models that could potentially alter the original input or retrieved evidence. The pipeline is supported by a preprocessing system that allows inputs of any length. Ultimately, this tool assesses the reliability of news by comparing it with real world sources and analyzing factual consistency.
 
 <p align="center">
-  <img src="preview.gif"/>
+  <img src="assets/preview.gif"/>
 </p>
-
----
-
-## App files
-
-- [app.py](./app.py) - Flask server
-- [index.html](./templates/index.html) - Frontend
-- [news_style.css](./static/news_style.css) - Styles
-- [news_script.js](./static/news_script.js) - JS
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

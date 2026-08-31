@@ -1,0 +1,215 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(32, 30, 30);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center; 
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 7vh;
+  transition: gap 0.5s ease;
+
+}
+
+.bar-container {
+
+  
+  position: relative;
+  
+  width: 40vw;
+  border-radius: 25px;
+  height: 5vh;
+  margin: 0
+
+  
+}
+
+
+.bar {
+  visibility: hidden;
+
+  border: solid;
+  border-width: 5px;
+  width: 0%;
+  border-color: white;
+  border-radius: 25px;
+  height: 100%;
+  background-color: white; 
+  box-shadow: 0px 0px 25px white;
+ 
+  margin-left: -0.8%;
+  margin-top: -0.5%;
+  transition: background-color 1.5s ease, border-color 1.5s ease, box-shadow 1.5s ease, width 1.5s linear, visibility 1s linear;
+
+
+}
+
+
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;     
+  width: 40vw;     
+}
+
+
+#input-field {
+
+  width: 30vw;      
+  height: 50vh;      
+  border-radius: 5%;
+  padding: 3%;
+  resize: none;
+  font-size: 18px;
+  border-width: 10px;
+  border-color: white;
+  cursor: default;
+  transition: height 0.5s ease, border-color 3s ease, box-shadow 1.5s ease, transform 0.5s ease;
+  
+ 
+ 
+
+
+}
+
+@keyframes blinking{
+  0%{
+    box-shadow: 0px 0px 0px ;
+    border-color: white;
+  }
+  40%{
+    border-color: gray;
+
+    
+
+  }
+
+  70%{
+    box-shadow: 0px 0px 35px white;
+
+  }
+  100%{
+    border-color: white;
+    box-shadow: 0px 0px 0px ;
+
+  }
+}
+
+#input-field:hover {
+  height: 55vh;
+}
+
+#input-field:focus {
+  height: 55vh;
+}
+
+.center-container:has(#input-field:focus),
+.center-container:has(#input-field:hover) {
+  gap: 4.5vh;
+}
+
+#main-button {
+
+  width: 7vw;
+  height: 7vh;
+  border-radius: 15px;
+  border: 3px solid white;
+
+  margin-top: 0;
+  margin-bottom: 1%;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#main-button:hover {
+  box-shadow: 0px 10px 20px black;
+  
+  transform: translateY(-7px);
+}
+
+textarea::placeholder {
+  text-align: center;
+  display: block;
+  padding-top: 35%;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  .bar-container {
+    width: 60vw;
+  }
+
+  #input-field {
+    width: 50vw;
+    height: 45vh;
+  }
+
+  #main-button {
+    width: 15vw;
+    height: 6.5vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .bar-container {
+    width: 70vw;
+  }
+
+  #input-field {
+    width: 70vw;
+    height: 40vh;
+  }
+
+  #main-button {
+    width: 25vw;
+    height: 6.5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .bar-container {
+    width: 85vw;
+  }
+
+  #input-field {
+    width: 85vw;
+    height: 38vh;
+  }
+
+  #main-button {
+    width: 45vw;
+    height: 6vh;
+    font-size: 14px;
+  }
+
+  .center-container {
+    gap: 3vh;
+  }
+}

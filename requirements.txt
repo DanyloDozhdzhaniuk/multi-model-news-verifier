@@ -1,9 +1,10 @@
-flask
-flask-cors
-flask-limiter
-torch
-transformers
-sentence-transformers
-worldnewsapi
-nltk
-python-dotenv   # optional (for securing an API key)
+flask==3.1.2
+flask-cors==6.0.1
+flask-limiter==3.13
+torch==2.13.0
+transformers==4.41.2
+sentence-transformers==5.1.1
+spacy==3.8.15
+worldnewsapi==2.2.0
+yake==0.7.3
+python-dotenv==1.2.1 
